@@ -33,6 +33,7 @@ jobs:
            path: build           
       # - name: Deploy to Staging (can be AWS) to some test ENV
       # I will deploy code to the test AWS EC2
+      # Tests 1) Smoke 5 minutes Test
     
       - name: Create a Release
         if: github.event_name == 'push'  && github.ref == 'refs/heads/main'
